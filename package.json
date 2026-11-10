@@ -1,4 +1,6 @@
+
 {
+  "homepage": "https://tarun9059.github.io/nodejs-project",
   "name": "random-quote-generator",
   "version": "1.0.0",
   "private": true,
@@ -7,16 +9,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "build": "node -e \"require('fs').cpSync('public', 'docs', {recursive:true})\""
   },
   "dependencies": {
     "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "supertest": "^7.1.4"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
