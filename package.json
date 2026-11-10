@@ -1,0 +1,22 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A responsive random quote generator powered by Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "supertest": "^7.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

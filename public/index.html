@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f2eb">
+    <meta name="description" content="A thoughtful daily pause with a fresh motivational quote.">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Random Quote Generator home">
+          <span class="wordmark-mark" aria-hidden="true">q</span>
+          <span>Small Hours <span class="wordmark-divider">/</span> Daily words</span>
+        </a>
+        <span class="edition-label"><span class="status-dot" aria-hidden="true"></span> A moment for yourself</span>
+      </header>
+
+      <section class="quote-stage" aria-labelledby="page-title">
+        <div class="stage-intro">
+          <p class="eyebrow">A little perspective, on demand</p>
+          <h1 id="page-title">Random Quote<br><span>Generator</span></h1>
+          <p class="intro-copy">Pause for a breath. Take a thought with you.</p>
+        </div>
+
+        <article class="quote-panel" aria-live="polite" aria-atomic="true">
+          <div class="panel-topline">
+            <span class="quote-kicker"><span class="sun-mark" aria-hidden="true">✳</span> A note to keep</span>
+            <span class="quote-count" id="quote-count">01 <span>/ 36</span></span>
+          </div>
+          <div class="quote-content" id="quote-content">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote id="quote-text">Finding a little inspiration...</blockquote>
+            <p class="quote-author" id="quote-author">— &nbsp;Please wait</p>
+          </div>
+          <div class="panel-rule"></div>
+          <div class="panel-actions">
+            <div class="share-actions">
+              <button class="icon-button" id="copy-button" type="button" aria-label="Copy quote" title="Copy quote">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"></path></svg>
+              </button>
+              <button class="icon-button" id="share-button" type="button" aria-label="Share quote" title="Share quote">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="m8.7 10.7 6.6-4.4m-6.6 7 6.6 4.4"></path></svg>
+              </button>
+            </div>
+            <button class="new-quote-button" id="new-quote-button" type="button">
+              <span>New quote</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+            </button>
+          </div>
+          <p class="status-message" id="status-message" role="status" aria-live="polite"></p>
+        </article>
+      </section>
+
+      <footer class="site-footer">
+        <span>Words for the work in progress.</span>
+        <span class="footer-index">TAKE WHAT YOU NEED <span aria-hidden="true">✳</span></span>
+      </footer>
+    </main>
+  </body>
+</html>
